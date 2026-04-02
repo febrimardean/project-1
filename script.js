@@ -18,7 +18,7 @@ $(document).ready(function() {
     let matrixInterval = setInterval(drawMatrix, 45);
 
     // 2. TIMELINE SEQUENCE
-    const sequence = ["3", "2", "1", "HAPPY", "BIRTHDAY", "ROY", "❤️"];
+    const sequence = ["3", "2", "1", "HAPPY", "BIRTHDAY", "BOMA", "❤️"];
     setTimeout(() => { textEl.style.opacity = "1"; let i = 0; const timer = setInterval(() => { if (i < sequence.length) { textEl.innerHTML = sequence[i]; i++; } else { clearInterval(timer); startFinalPhase(); } }, 1500); }, 2000);
     function startFinalPhase() { setTimeout(() => { clearInterval(matrixInterval); canvas.style.opacity = "0"; document.body.classList.add('space-active'); setTimeout(() => { gifEl.style.display = "block"; setTimeout(() => { gifEl.style.display = "none"; bookCont.style.display = "block"; setTimeout(() => { bookCont.style.opacity = "1"; }, 100); }, 3500); }, 1000); }, 1500); }
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Special - Febri Final Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+    <div id="mainText"></div>
+    <img id="bdayGif" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWE2c3JwanJ5OHJycmQybGZsOGJ0ZWdpbmVub2RncGVtZjk3M25pdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PrzIrP5WjXHccWK7eE/giphy.gif">
+
+    <div id="book-wrapper">
+        <input type="checkbox" id="checkbox-cover">
+        <input type="checkbox" id="checkbox-page1">
+        <input type="checkbox" id="checkbox-page2">
+        <input type="checkbox" id="checkbox-page3">
+
+        <div class="book">
+            <div class="cover">
+                <div class="face front"><h2>FOR YOU ❤️</h2><label for="checkbox-cover"></label></div>
+                <div class="face back"></div>
+            </div>
+
+            <div class="page" id="p1">
+                <div class="face front">
+                    <div class="photo-frame"><img src="https://picsum.photos/500/600?random=11"></div>
+                    <div class="caption-text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p></div>
+                    <label for="checkbox-page1"></label>
+                </div>
+                <div class="face back">
+                    <div class="photo-frame"><img src="https://picsum.photos/500/600?random=12"></div>
+                    <div class="caption-text"><p>Ut enim ad minim veniam, quis nostrud exercitation...</p></div>
+                    <label for="checkbox-page1"></label>
+                </div>
+            </div>
+
+            <div class="page" id="p2">
+                <div class="face front">
+                    <div class="photo-frame"><img src="https://picsum.photos/500/600?random=13"></div>
+                    <div class="caption-text"><p>Duis aute irure dolor in reprehenderit in voluptate...</p></div>
+                    <label for="checkbox-page2"></label>
+                </div>
+                <div class="face back">
+                    <div class="photo-frame"><img src="https://picsum.photos/500/600?random=14"></div>
+                    <div class="caption-text"><p>Sunt in culpa qui officia deserunt mollit anim id est...</p></div>
+                    <label for="checkbox-page2"></label>
+                </div>
+            </div>
+
+            <div class="page" id="p3">
+                <div class="face front" style="justify-content: center;">
+                    <h1 style="color:#ff1493;">I LOVE YOU</h1>
+                    <p>SELESAI</p>
+                    <label for="checkbox-page3"></label>
+                </div>
+                <div class="face back" style="background:#ff1493; color:white; justify-content: center;">
+                    <div style="font-size:100px;">❤️</div>
+                    <label for="checkbox-page3"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="heart-collection"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
